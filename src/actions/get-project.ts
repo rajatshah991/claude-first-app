@@ -3,6 +3,7 @@
 import { getSession } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 
+//Getting a project name
 export async function getProject(projectId: string) {
   const session = await getSession();
   
